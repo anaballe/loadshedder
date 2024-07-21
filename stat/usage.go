@@ -1,7 +1,7 @@
 package stat
 
 import (
-	"github.com/anandshukla-sharechat/loadshedder/utils"
+	"github.com/anaballe/loadshedder/utils"
 	"github.com/prometheus/client_golang/prometheus"
 	"sync/atomic"
 	"time"

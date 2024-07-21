@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/anandshukla-sharechat/loadshedder/utils"
+	"github.com/anaballe/loadshedder/utils"
 	"golang.org/x/sys/unix"
 )
 

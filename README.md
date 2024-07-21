@@ -2,7 +2,7 @@
 
  This library is used to shed excess load on the basis of cpu utilisation. You can use instance of prometheus GaugeVec & CounterVec if you want to plot CPU utilisation & sheddings metric (they are optional - you can use nil if you don't want to add signal for them). To get the library simply run : 
 
-    go get -u github.com/anandshukla-sharechat/loadshedder@main
+    go get -u github.com/anaballe/loadshedder@main
 
 ## NewSheddingStat : 
     use this function to create an instance of shedding stat. Names for the cpu stat gauge vec & load shedding counter vec
