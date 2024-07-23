@@ -16,7 +16,6 @@ func allow(cpuThreshold int64) bool {
 }
 
 // GinUnarySheddingInterceptor returns a func that does load shedding on processing unary requests.
-// This is taken from rest/handler/sheddinghandler.go
 func GinUnarySheddingInterceptor(shedderEnabled bool, cpuThreshold int64, probeAPI string, sheddingStat *SheddingStat) gin.HandlerFunc {
 	if probeAPI == "" {
 		probeAPI = "/health"
