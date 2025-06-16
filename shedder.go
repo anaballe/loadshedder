@@ -15,6 +15,11 @@ func allow(cpuThreshold int64) bool {
 	return false
 }
 
+// GetCpuUsage : get the cpu usage
+func GetCpuUsage() int64 {
+	return stat.CpuUsage()
+}
+
 // GinUnarySheddingInterceptor returns a func that does load shedding on processing unary requests.
 func GinUnarySheddingInterceptor(shedderEnabled bool, cpuThreshold int64, probeAPI string, sheddingStat *SheddingStat) gin.HandlerFunc {
 	if probeAPI == "" {
